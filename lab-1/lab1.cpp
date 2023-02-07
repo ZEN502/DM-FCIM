@@ -27,20 +27,19 @@ typedef Node* pNode;
     public:
         pNode next;
         int data;
-        
         Node()
         {    
             next = nullptr;
             data = -1;
         }
+        Node(int data) : Node()
+        {   
+            this->data = data;
+        }
         Node(pNode clone)
         {
             this->data = clone->data;
             this->next = clone->next;
-        }
-        Node(int data) : Node()
-        {    
-            this->data = data;
         }
         Node(int data, Node *next)
         {
