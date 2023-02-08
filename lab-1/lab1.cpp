@@ -36,7 +36,7 @@ typedef Node* pNode;
         {   
             this->data = data;
         }
-        Node(pNode clone)
+        Node(pNode clone) 
         {
             this->data = clone->data;
             this->next = clone->next;
